@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Javascript</title>
+</head>
+<body>
+    <h1>Calculadora Javascript</h1><br><br>
+
+    <label for="">Valor A: </label><br>
+    <input type="number" name="numeroA" id="numeroA"><br><br>
+
+    <label for="operacoes">Operações: </label><br>
+    <select name="operacao" id="operacao">
+
+        <option value="" hidden selected>-- Escolha uma Operação --</option>
+        <option value="soma">+</option>
+        <option value="subtracao">-</option>
+        <option value="multiplicacao">*</option>
+        <option value="divisao">/</option>
+
+    </select><br><br>
+
+    <label for="">Valor B: </label><br>
+    <input type="number" name="numeroB" id="numeroB"><br><br>
+
+    <label for="">Resultado </label><br>
+    <input type="text" name="resultado" id="resultado" disabled><br><br>
+
+    <button onclick="calculoIF()">Calcular com IF</button>
+    <button onclick="calculoSwitch()">Calcular com Switch</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
